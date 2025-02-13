@@ -4,7 +4,7 @@
 print("Welcome!!!, Let's get ready to play,   \n Rock, Paper, Scissors")
 
 import random
-items = ["rock", "paper", "scissors"]
+items = ["rocks", "paper", "scissors"]
 player_a = random.choice(items)
 print(player_a)
 
@@ -22,5 +22,4 @@ player(b)"""
 """
 if player_a == player_b:
     print("it is a tie, no winner")"""
-
 
