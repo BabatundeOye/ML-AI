@@ -2,7 +2,7 @@
 import random
 number = random.randint(1,50)
 def number_guesser():
-    print("I am thinking of a number between 1 and 100, can you guess?")
+    print("I am thinking of a number between 1 and 50, can you guess?")
     secret_number = number
     attempts = 3
 
