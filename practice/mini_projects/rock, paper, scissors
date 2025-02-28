@@ -1,0 +1,42 @@
+
+
+name = input("Enter your name: ") #allows you to enter a name 
+print(f"Welcome!!!{name}, Let's get ready to play,   \n Rock, Paper, Scissors")
+
+game_options = ["rock", "paper", "scissors"] # decided to limit the options and not a wild card
+user_choice = input("Choose rock or paper or scissors: ").lower() #allow user to choose these options
+while user_choice not in game_options:
+    print("invalid choice! Please enter rock, paper or scissors")
+    user_choice = input("please choose rock or paper or scissors ").lower()
+
+import random
+computer_choice = random.choice(game_options) #computer randomly choose rock, paper or scissors
+print(f"\n{name} chose {user_choice} and computer chose {computer_choice}.\n")
+
+
+if user_choice == computer_choice:       # all possible 9 combinations 
+    print("it is a tie!, no winner")     #accounts for all possible 3 tie combinations
+elif user_choice == "rock":
+    if computer_choice == "paper":
+        print("paper covers rock, computer wins")
+    else:
+        print(f"rock crushes scissors, {name} wins ")
+elif user_choice == "paper":
+    if computer_choice == "scissors":
+        print("scissors cut paper, computer wins")
+    else:
+        print(f"paper covers rock, {name} wins")
+elif user_choice == "scissors":
+    if computer_choice == "paper":
+        print(f"scissors cut paper, {name} wins")
+    else: 
+        print("rock crushes scissors, computer wins")
+
+
+
+
+#Winning Rules
+#•	Rock beats Scissors (Rock crushes Scissors)
+#•	Paper beats Rock (Paper covers Rock)
+#•	Scissors beat Paper (Scissors cut Paper)
+#•	Same choices result in a Draw
