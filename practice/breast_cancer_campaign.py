@@ -7,7 +7,7 @@ import seaborn as sns
 
 
 
-filename = "C:/Users/tunde/OneDrive/ML_AI/practice/csv/breast_data.csv"
+filename = ""
 
 #download file from https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/download
 df = pd.read_csv(filename)
