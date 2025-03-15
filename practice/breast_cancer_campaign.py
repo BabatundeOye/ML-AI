@@ -42,7 +42,7 @@ encoder = LabelEncoder()
 df.iloc[:, 0] = encoder.fit_transform(df.iloc[:, 0])
 print(df.head(5))
 
-#visalizations
+#visualizations
 df_without_first_column = df.iloc[:, 1:]
 correlation_matrix = df_without_first_column.corr()
 print(correlation_matrix)
